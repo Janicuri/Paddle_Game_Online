@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Online game</title>
+
+    <style>
+
+#canvas{
+    border:1px solid black;
+    background-image: url('https://wallpaperaccess.com/full/1288076.jpg');  
+
+}
+body{
+    background-color: black;
+    touch-action:none;
+    text-align: center;
+    color: white;
+}
+
+    </style>
+   
+</head>
+<body>
+    <br><br><br><br><br>
+<div id="game">
+    <canvas id="canvas"></canvas>
+    <h1 id="score"></h1>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="ball.js" type="module"></script>
+<script src="player.js" type="module"></script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
